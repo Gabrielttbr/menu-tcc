@@ -34,17 +34,33 @@ li a{
 
 }
 .container{
-    width: 1024px;
+    width: 1104px;
     background: #fff;
     margin: auto;
     height: 60px;
     transform: skewX(1deg);
+    overflow: hidden;
     
 }
 .container ::before{
     content: '';
-    background-color: rgb(160, 99, 99);
-    height: 60PX;
 
+    background-color: #660c01;
+    height: 100px;
+    width: 50px;
+    transform: skewX(30deg);
     position: absolute;
+    left: 0;
+  
+}
+.container ::after{
+    content: '';
+
+    background-color: #660c01;
+    height: 100px;
+    width: 50px;
+    transform: skewX(-30deg);
+    position: absolute;
+    right: 0;
+
 }
